@@ -1,0 +1,463 @@
+/* Font & Reset */
+body {
+  margin: 25px;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #ff8a3d, #ffb36b); /* gradasi oranye premium */
+  color: #4b2e0f; /* coklat elegan */
+}
+
+/* Box Container */
+#box {
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #fffaf6; /* krem lembut */
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+/* Header */
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* ✅ memastikan semua isi (termasuk logo) simetris tengah */
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #ff7a2f, #ff9a5c); /* oranye keemasan */
+  color: #fffaf0;
+}
+
+/* Logo Styling */
+.logo {
+  display: block;
+  margin: 0 auto 20px auto; /* ✅ membuat logo simetris horizontal */
+  width: 150px; /* ukuran ideal (bisa disesuaikan) */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.08);
+}
+
+#header h1 {
+  margin: 10px 0 0 0; /* ✅ sedikit jarak dari logo ke judul */
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+#header .tagline {
+  margin-top: 8px;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+/* Logo Styling */
+.logo {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 180 px; /* ukuran lebih proporsional */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.08);
+}
+
+/* Menu Bar */
+#menubar {
+  text-align: center;
+  background: #fff2e8; /* krem pastel */
+  padding: 15px;
+}
+
+#menubar a {
+  text-decoration: none;
+  color: #ff7a2f;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+#menubar a:hover {
+  color: #d8580c;
+  border-bottom: 2px solid #d8580c;
+}
+
+#menubar .active {
+  color: #d8580c;
+  font-weight: 700;
+  border-bottom: 2px solid #d8580c;
+}
+
+/* Konten */
+#konten {
+  padding: 40px;
+  background-color: #fffaf6;
+}
+
+#konten h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #ff7a2f;
+}
+
+#konten p {
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  color: #5a3410;
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 250px;
+  background: #ffe3d3;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  color: #d8580c;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+  padding: 20px;
+  background: #fff2e8;
+  color: #99511f;
+  font-size: 0.9rem;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://images.unsplash.com/photo-1522202222206-6a1d1f7f4bbf?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+  color: white;
+  padding: 100px 40px;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  background: #ff7a2f;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.hero .btn:hover {
+  background: #d8580c;
+}
+
+/* Produk Grid */
+.produk-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px; /* jarak antar kartu lebih proporsional */
+  padding: 40px 20px;
+}
+
+/* Kartu Produk */
+.produk-card {
+  flex: 1 1 280px;
+  max-width: 300px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.produk-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.produk-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  justify-content: center;
+  border-bottom: 4px solid #ff7a2f;
+}
+
+/* Judul Produk */
+.produk-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ff7a2f;
+  margin: 20px 0 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase; /* agar terlihat premium */
+}
+
+/* Deskripsi Produk */
+.produk-card p {
+  font-size: 0.95rem;
+  color: #555;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Tombol Produk */
+.btn-produk {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #ff7a2f;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-produk:hover {
+  background: #d8580c;
+}
+
+/* Halaman Detail */
+.detail-header {
+  background: linear-gradient(135deg, #ff8a3d, #ff6b2d);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.detail-content {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.detail-img {
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.detail-info {
+  max-width: 450px;
+}
+
+.detail-info h2 {
+  margin-top: 1rem;
+  color: #ff7a2f;
+}
+
+.detail-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.detail-info li {
+  background: #fff2e8;
+  margin: 6px 0;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.harga {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #d8580c;
+  margin-top: 1rem;
+}
+
+.btn-kembali {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background: #ff7a2f;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.btn-kembali:hover {
+  background: #d8580c;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: #fff2e8;
+  color: #6b3a1e;
+  border-top: 1px solid #f5d1b8;
+}
+
+/* Logo Styling */
+.logo {
+  display: block;
+  margin: 0 auto 20px auto; /* simetris tengah & jarak bawah */
+  width: 120px; /* ukuran bisa kamu sesuaikan */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.08); /* efek hover elegan */
+}
+
+.logo {
+  animation: fadeIn 1.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.gambarumpku{
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 150px;
+    height: auto;
+    justify-content: center;
+}
+
+/* ====== ANIMASI PREMIUM UNTUK LOGO ====== */
+.logo {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 150px;
+  height: auto;
+  animation: fadeSlideIn 1.5s ease-out, glowPulse 3s infinite ease-in-out;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* ✨ Efek Hover: Logo melayang elegan */
+.logo:hover {
+  transform: translateY(-10px) scale(1.08);
+  box-shadow: 0 12px 30px rgba(255, 122, 47, 0.5);
+}
+
+/* 🌟 Animasi masuk: Fade + Slide dari bawah */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.03);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* ✨ Efek cahaya lembut berdenyut */
+@keyframes glowPulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 0px rgba(255, 122, 47, 0.0));
+  }
+  50% {
+    filter: drop-shadow(0 0 20px rgba(255, 122, 47, 0.5));
+  }
+  25% {
+  filter: drop-shadow(0 0 20px rgba(255, 196, 112, 0.6));
+ } 
+}
+
+/* --- ANIMASI UNTUK LOGO UMPKU --- */
+.gambarumpku {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 150px;
+  height: auto;
+  justify-content: center;
+  animation: fadeInLogo 2s ease-out, floatLogo 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 12px rgba(255, 122, 47, 0.4));
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.gambarumpku:hover {
+  transform: scale(1.08) rotate(2deg);
+  filter: drop-shadow(0 0 20px rgba(255, 122, 47, 0.8));
+}
+
+/* --- Animasi Muncul Halus --- */
+@keyframes fadeInLogo {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* --- Animasi Melayang Elegan --- */
+@keyframes floatLogo {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-12px) scale(1.02);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
