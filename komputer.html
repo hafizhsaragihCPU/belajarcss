@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOMPUTER | Detail Produk</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #ff7a2f, #ffb347);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      animation: fadeInDown 1.5s ease;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      animation: fadeInDown 1.8s ease;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    /* 📸 Gambar di kiri */
+    .image-container {
+      flex: 1 1 45%;
+      text-align: center;
+      animation: float 4s ease-in-out infinite;
+      order: 1;
+    }
+    .image-container img {
+      width: 550px;       /* 💡 ukuran lebar */
+      height: 400px;       /* 💡 ukuran tinggi */
+      object-fit: cover;   /* 💡 memastikan proporsi tetap rapi */
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    }
+
+    /* 📄 Konten teks di kanan */
+    .content {
+      flex: 1 1 45%;
+      padding: 30px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      animation: fadeInRight 1.8s ease;
+      order: 2;
+    }
+    .content h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 30px;
+      color: #f5f5f5;
+    }
+    .specs {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+    .specs li {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+      background: rgba(255,255,255,0.15);
+      padding: 10px 15px;
+      border-radius: 10px;
+    }
+
+    .btn-back {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #fff;
+      color: #ff7a2f;
+      font-weight: 600;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .btn-back:hover {
+      background: #ff7a2f;
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(255,255,255,0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.2);
+      margin-top: auto;
+      font-size: 0.9rem;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(40px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsif */
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .image-container img {
+        width: 100%;
+        height: auto;
+      }
+      .content {
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>KOMPUTER PREMIUM</h1>
+  <p>Teknologi Canggih untuk Performa Maksimal</p>
+</header>
+
+<div class="container">
+  <div class="image-container">
+    <img src="komputer (1).jpg" alt="Komputer">
+  </div>
+
+  <div class="content">
+    <h2>Deskripsi Produk</h2>
+    <p>
+      Komputer ini dirancang untuk memenuhi kebutuhan profesional modern. 
+      Dengan performa tinggi, desain elegan, dan fitur mutakhir, perangkat ini 
+      menjadi solusi terbaik untuk pekerjaan intensif, desain grafis, pemrograman, hingga industri AI.
+    </p>
+
+    <ul class="specs">
+      <li>💻 Prosesor: Intel Core i9 Generasi ke-13</li>
+      <li>⚡ RAM: 32 GB DDR5</li>
+      <li>🗄️ Penyimpanan: 1 TB NVMe SSD</li>
+      <li>🎨 GPU: NVIDIA RTX 4080</li>
+      <li>🔋 Daya Tahan: Optimal 24/7 Operasional</li>
+    </ul>
+
+    <a href="produk.html" class="btn-back">⬅️ Kembali ke Katalog</a>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 UNIVERSITAS MUHAMMADIYAH PKU SURAKARTA | All Rights Reserved
+</footer>
+
+</body>
+</html>
